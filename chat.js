@@ -1,3 +1,5 @@
+var server = 'http://lightim.aws.af.cm/';
+
 $(document).ready(function(){
 
     // on affiche les éléments de bases
@@ -188,7 +190,7 @@ var tw = {
         // log d'un user
         load_log : function(log,pass){
                 $.ajax({
-                        url: "http://node.freelancis.net/login/"+log+"/"+pass,
+                        url: server+"login/"+log+"/"+pass,
                         dataType: "jsonp",
                         success: function(d){
                                 console.log("ca marche",d);
@@ -214,7 +216,7 @@ var tw = {
         // chargement des messages reçus
         load_receive : function(log,token){
                 $.ajax({
-                        url: "http://node.freelancis.net/inbox/"+log+"/"+token,
+                        url: server+"inbox/"+log+"/"+token,
                         dataType: "jsonp",
                         success: function(d){
                                 console.log("ca marche",d);
@@ -316,7 +318,7 @@ var tw = {
         load_send : function(log,token,destinataire,msg){
                 $.ajax({
                         destinataire : encodeURIComponent(destinataire),
-                        url: "http://node.freelancis.net/tell/"+log+"/"+token+"/"+destinataire+"/"+msg,
+                        url: server+"tell/"+log+"/"+token+"/"+destinataire+"/"+msg,
                         dataType: "jsonp",
                         success: function(d){
                                 console.log("ca marche",d);
@@ -375,7 +377,7 @@ var tw = {
                 document.getElementById('log_c').value = '';
                 var pass = (document.getElementById('pass_c').value);
                 document.getElementById('pass_c').value = '';
-                 var url = "http://node.freelancis.net/create/"+log+"/"+pass;
+                 var url = server+"create/"+log+"/"+pass;
                 tw.load_create(url);
 
             },
