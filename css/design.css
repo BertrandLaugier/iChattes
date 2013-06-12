@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    background-color: #eff0ea;
+}
+
+/*---------------------- Chapitres ------------------------------*/
+
+.wrapper{
+    width:900px;
+    margin: auto;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+#chapitres{
+    margin-top: 50px;
+    padding: 4px ;
+    color: #8e8e8e;
+    background-color: #d7d7d7;
+    border-radius: 2px;
+}
+li.chapitre_parents{
+    height: 39px;
+    border-radius: 5px;
+    background-image: url(images/chapitre_background.jpg);
+    background-repeat: repeat-x;
+    cursor:pointer;
+}
+li.chapitre_parents p{
+    padding-top: 12.5px;
+    padding-left: 44px;
+}
+ul.methodes{
+    background-color: #F2F2F2;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+
+}
+li.chapitre_child{
+    width: 845px;
+    height: 77px;
+    margin:auto;
+    margin-top: 7px;
+    background-image: url(images/methode_background.jpg);
+    background-repeat: repeat-x;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgba(136, 136, 136, 0.2);
+}
+li.chapitre_child a{
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 30.5px;
+
+}
